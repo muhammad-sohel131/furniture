@@ -1,0 +1,59 @@
+.inspiration {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #DBE8F2;
+}
+.inspiration_wrapper {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    justify-content: space-between;
+}
+.rightColumn h4 {
+    background-color: var(---primary-color);
+    padding: 2px 8px;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.rightColumn button {
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    transition: all 0.3s;
+}
+.rightColumn button:hover {
+    background-color: #fff;
+    box-shadow: 0px 8px 12px -6px gray;
+}
+.images_wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.images_wrapper > div {
+    width: calc(100%/4 - 10px);
+    display: inherit;
+}
+.leftColumn img {
+    width: 100%;
+    height: auto;
+
+}
+
+@media screen and (max-width: 1080px){
+    .inspiration_wrapper {
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
+}

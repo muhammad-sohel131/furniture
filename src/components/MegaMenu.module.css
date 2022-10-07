@@ -1,0 +1,35 @@
+.megaMenu {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    /* width: 100%; */
+    border: 1px solid #eee;
+    z-index: 100;
+}
+.megaMenu_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    max-width: 1280px;
+    background-color: #fff;
+}
+.megaMenu_item {
+    max-width: 220px;
+    padding: 15px;
+}
+.megaMenu_item h4 {
+    font-size: 18px;
+    color: #000;
+}
+.mega_menu_link_item a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(---gray-color);
+}
+.mega_menu_link_item a:hover {
+    text-decoration: underline;
+}
+.mega_menu_link_item .link_icon {
+    font-size: 12px;
+}

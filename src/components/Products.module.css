@@ -1,0 +1,9 @@
+.products {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.products_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}

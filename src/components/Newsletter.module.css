@@ -1,0 +1,52 @@
+.newsletter p {
+    color: rgba(139, 145, 152, 1);
+    margin-bottom: 15px;
+}
+.form_controll {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.form_input {
+    width: 80%;
+    padding: 12px 0px 12px 12px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+.submit_btn {
+    width: 20%;
+    min-width: 75px;
+    background-color: var(---primary-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    justify-content: center;
+}
+.checkbox {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.checkbox label , .checkbox a {
+    color: rgba(139, 145, 152, 1);
+    font-size: 13px;
+}
+.checkbox a {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.checkbox a:hover {
+    color: var(---primary-color);
+    text-decoration: none;
+}

@@ -1,0 +1,23 @@
+
+.hideMenu:hover {
+    transform: rotate(180deg);
+}
+.mobileMenu_wrapper {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.link_item a {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 22px;
+    padding: 10px;
+    transition: all 0.3s;
+    border-bottom: 1px solid var(---secondary-color);
+}
+.link_item a:hover {
+    background-color: var(---secondary-color);
+}

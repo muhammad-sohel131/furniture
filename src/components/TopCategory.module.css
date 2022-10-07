@@ -1,0 +1,11 @@
+.topCategory {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F0F2F5;
+}
+.topCategory_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    column-gap: 10px;
+}

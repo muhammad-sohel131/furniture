@@ -1,0 +1,17 @@
+.feedback {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.feedback p {
+    color: #000 !important;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.icon {
+    color: var(---dark-orange-color);
+    font-size: 75px;
+}

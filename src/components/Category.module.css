@@ -1,0 +1,33 @@
+.category {
+  margin-top: 50px;
+}
+.category_wrapper {
+  display: grid;
+  grid-template-areas: "sofa sofa lamp desk desk"
+                         "sofa sofa lamp sale accessories";
+
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .category_wrapper {
+    grid-template-areas:
+      "sofa sofa sofa lamp"
+      "desk desk desk desk"
+      "sale sale accessories accessories";
+  }
+}
+.category_wrapper > a:first-child {
+  grid-area: sofa;
+}
+.category_wrapper > a:nth-child(2) {
+  grid-area: lamp;
+}
+.category_wrapper > a:nth-child(3) {
+  grid-area: desk;
+}
+.category_wrapper > a:nth-child(4) {
+  grid-area: sale;
+}
+.category_wrapper > a:nth-child(5) {
+  grid-area: accessories;
+}

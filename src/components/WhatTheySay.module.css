@@ -1,0 +1,36 @@
+.whatTheySay {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../images/whatPeopleSay.jfif');
+    background-size: cover;
+    background-position: center;
+    background-color: #161414ad;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+.whatTheySay h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.underline {
+    width: 60px;
+    height: 3px;
+    background-color: var(---primary-color);
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.whatTheySay  p {
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+}
+.whatTheySay_wrapper {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+}

@@ -1,0 +1,8 @@
+.link_item {
+    margin-bottom: 8px;
+}
+.link {
+    text-transform: capitalize;
+    font-size: 17px;
+    color: rgba(139, 145, 152, 1);
+}

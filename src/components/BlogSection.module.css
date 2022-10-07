@@ -1,0 +1,21 @@
+.blogSection {
+    padding-top: 50px;
+}
+.blogSection h2 {
+    text-align: center;
+}
+.underline {
+    width: 60px;
+    height: 3px;
+    background-color: var(---primary-color);
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.blogSection_wrapper {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+}
