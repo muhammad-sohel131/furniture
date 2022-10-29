@@ -1,6 +1,8 @@
 import { IoMdArrowDropright } from 'react-icons/io'
 import styles from './MultiLevelMenu.module.css'
 
+import { Link } from 'react-router-dom'
+
 const MultiLevelMenu = ({items}) => {
     return(
         <ul className={styles.multiLevelMenu}>
@@ -8,15 +10,15 @@ const MultiLevelMenu = ({items}) => {
                 if(item.subMenu){
                     return(
                         <li className={styles.multiLevelMenu_item}>
-                            <a href={item.link}>
+                            <Link to={item.link}>
                                 {item.text}
                                 <IoMdArrowDropright />
-                            </a>
+                            </Link>
                             <ul className={styles.subMenu}>
                                 {item.subMenu.map(subItem => {
                                     return (
                                         <li className={styles.subMenu_item}>
-                                            <a href={subItem.link}>{subItem.text}</a>
+                                            <Link to={subItem.link}>{subItem.text}</Link>
                                         </li>
                                     )
                                 })}
@@ -26,7 +28,7 @@ const MultiLevelMenu = ({items}) => {
                 }else {
                     return(
                         <li className={styles.multiLevelMenu_item}>
-                            <a href={item.link}>{item.text}</a>
+                            <Link to={item.link}>{item.text}</Link>
                         </li>
                     )
                 }

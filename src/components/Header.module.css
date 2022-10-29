@@ -163,6 +163,9 @@
 .account_content small, .wishlist_content small, .productCompare_content  small {
     font-size: 11px;
 }
+.account_content ul {
+    top: 115px !important;
+}
 
 /* bottom header */
 .bottom_header {
@@ -260,6 +263,7 @@
 .menu_item:hover > .menu , .categoryButton:hover > .menu {
     display: block;
 }
+
 .menu span {
     width: 28px;
     height: 28px;

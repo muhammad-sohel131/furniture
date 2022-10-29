@@ -15,12 +15,14 @@ import { BsArrowLeftRight } from "react-icons/bs";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { GiShoppingBag } from "react-icons/gi";
 import { BiEuro } from "react-icons/bi";
+import { Link } from 'react-router-dom'
+
+import { useState } from "react";
 
 import styles from "./Header.module.css";
 import CategoryMenu from "./CategoryMenu";
 import MegaMenu from "./MegaMenu";
 import MultiLevelMenu from "./MultiLevelMenu";
-import { useState } from "react";
 import MobileHeader from "./MobileHeader";
 import SearchInput from "./SearchInput";
 
@@ -39,10 +41,14 @@ const multiLevelMenuItems = [
 ];
 
 const aboutMenusItems = [
-  { text: "Delivery Info", link: "/" },
-  { text: "Terms & Conditions", link: "/" },
-  { text: "Privacy Policy", link: "/" },
+  { text: "Terms & Conditions", link: "/terms" },
+  { text: "Privacy Policy", link: "/privacy" },
 ];
+
+const accounts = [
+  {text: "Login", link: "/login"},
+  {text: "Register", link: "/register"}
+]
 
 const Header = () => {
   const [scrollHeight, setScrollHeight] = useState(0);
@@ -51,7 +57,7 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header>
       {/* Desktop Header */}
 
       <div className={styles.desktop_header}>
@@ -131,7 +137,12 @@ const Header = () => {
                   </div>
                   <div className={styles.account_content}>
                     <span>Account</span>
-                    <small>Login / Register</small>
+                    <div className={styles.menu_item}>
+                      <small>Login / Register</small>
+                      <div className={styles.menu}>
+                        <MultiLevelMenu items={accounts} />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className={styles.wishlist}>
@@ -201,27 +212,27 @@ const Header = () => {
               <div className={styles.main_menu_2}>
                 <ul className={styles.h_menu}>
                   <li className={styles.menu_item}>
-                    <a href="/" className={styles.menu_link}>
+                    <Link to="/about" className={styles.menu_link}>
                       About
-                    </a>
+                    </Link>
                     <div className={styles.menu}>
                       <MultiLevelMenu items={aboutMenusItems} />
                     </div>
                   </li>
                   <li className={styles.menu_item}>
-                    <a href="/" className={styles.menu_link}>
+                    <Link to="/faq" className={styles.menu_link}>
                       FAQ
-                    </a>
+                    </Link>
                   </li>
                   <li className={styles.menu_item}>
-                    <a href="/" className={styles.menu_link}>
+                    <Link to="/contact" className={styles.menu_link}>
                       Contact
-                    </a>
+                    </Link>
                   </li>
                   <li className={styles.menu_item}>
-                    <a href="/" className={styles.menu_link}>
+                    <Link to="/blog" className={styles.menu_link}>
                       Blog
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <div className={styles.cart}>
